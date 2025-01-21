@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  /* Shared Styles */
+
+.display-flex{
+    display: flex;
+}
+
+
+
+
+  /* Navbar Style */
+  
+   ul{
+    list-style: none;
+    gap: 32px;
+  }
+  .nav-container{
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: 0px auto;
+    padding-top: 24px;
+    /* border: 1px solid tomato; */
+  }
+  .nav-middle ul li{
+    flex-direction: row;
+  }
+  .nav-icon{
+    width: 62px;
+    height: 62px;
+  }
+  .nav-tittle{
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .nav-left{
+    align-items: center;
+  }
+  .nav-home{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: orange;
+  }
+  .nav-about{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #01ACFD;
+  }
+  .nav-facilities{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #05D4DF;
+  }
+  .nav-admission{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #5D58EF;
+  }
+  .nav-btn{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: orange;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 12px;
+    
+  }
+  .menu-bar {
+    display: none;
+  }
+
+
+  /* Hero-Kids Section */
+  .kids-container{
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1160px;
+    margin: 0px auto;
+    padding-top: 24px;
+  }
+  .kids-tittle{
+    font-size: 3.5rem;
+    font-weight: 800;
+  }
+  .Empowering{
+    color: #FEA301;
+  }
+  .towards-vision{
+    color: #01ACFD;
+  }
+  .hero-img img{
+    max-width: 100%;
+  }
+  .kids-description{
+    font-size: 1.25rem;
+    color: #111111;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .btn-kids{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    background-color: #111111;
+    padding: 10px 47px;
+    border-radius: 12px;
+  }
+
+
+  /* Student-Curriculm-Section */
+  .curriculum-tittle{
+    align-items: center;
+    margin: 0px auto;
+  }
+
+
+  /* Media Query for Small device */
+  @media screen and (max-width: 576px) {
+    .nav-tittle,
+    .nav-middle,
+    .nav-right{
+      display: none;
+    }
+    .menu-bar{
+      display: block;
+      width: 35px;
+      height: 35px;
+    }
+    .nav-container{
+      border: 1px solid orange;
+      max-width: 100%;
+      padding: 15px;
+    }
+    .kids-container{
+      flex-direction: column-reverse;
+      margin-top: 50px;
+      text-align: center;
+    }
+  }
