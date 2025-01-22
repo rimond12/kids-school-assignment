@@ -351,6 +351,7 @@
       border-radius: 12px;
       margin-top: -15px;
      }
+     
   /* Media Query for Small device */
 
   @media screen and (max-width: 576px) {
@@ -388,4 +389,19 @@
       grid-template-columns: 1fr;
       gap: 5px;
     }
+    .story-card-right, img{
+      max-width: 100%;
+     }
+     .date-time2{
+      max-width: 50%;
+     }
+     .date-time3{
+      max-width: 50%;
+     }
+     .date-time4{
+      max-width: 50%;
+     }
+     .date-time5{
+      max-width: 50%;
+     }
   }
