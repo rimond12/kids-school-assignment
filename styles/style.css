@@ -11,6 +11,7 @@
     padding: 0px;
     box-sizing: border-box;
   }
+
   /* Shared Styles */
 
 .display-flex{
@@ -32,7 +33,6 @@
     max-width: 1160px;
     margin: 0px auto;
     padding-top: 24px;
-    /* border: 1px solid tomato; */
   }
   .nav-middle ul li{
     flex-direction: row;
@@ -84,6 +84,7 @@
 
 
   /* Hero-Kids Section */
+
   .kids-container{
     justify-content: space-between;
     align-items: center;
@@ -121,13 +122,125 @@
 
 
   /* Student-Curriculm-Section */
+
+  .curriculum-section-container{
+    max-width: 100%;
+    background-image: url(../images/bg.png);
+  }
   .curriculum-tittle{
-    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 60px;
+    margin-bottom: -20px;
+  }
+  .curriculum-secton-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
     margin: 0px auto;
+    max-width: 1160px;
+    padding: 150px 0px;
+    gap: 30px;
+  }
+ 
+  .card-tittle{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #202020;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+  }
+  .card-description{
+    font-size: 1rem;
+    color: #808080;
+    margin-bottom: 30px;
+  }
+  .btn-card1{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #64C8FF;
+   
+  }
+  .btn-card2{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #F0AA00;
+   
+  }
+  .btn-card3{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #8700FF;
+   
+  }
+  .card-1{
+    padding: 50px;
+    background-image: linear-gradient(to bottom, rgba(222, 245, 255, 1), #FFFFFF);
+    box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+  }
+  .card-2{
+    padding: 50px;
+    background-image: linear-gradient(to bottom, #FFF4DC, #FFFFFF);
+    box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+  }
+  .card-3{
+    padding: 50px;
+    background-image: linear-gradient(to bottom, #EEE1FF, #FFFFFF);
+    box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+  }
+  .dobule-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: -30px;
+  }
+  .rotate-img{
+    transform: rotate(180deg);
   }
 
+    /* Stories Section Styles */
 
+    .story-tittle{
+      text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 60px;
+    }
+   
+    .story-section-card{
+      max-width: 1160px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px auto;
+      
+    }
+    .story-side-left{
+      /* max-width:35%; */
+      border-radius: 10px;
+  box-shadow: 20px;
+  background-color: aliceblue;
+  /* height: 480px; */
+  }
+     .story-side-right{
+      /* max-width: 55%; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content:center;
+    gap: 10px;
+    margin: 0 auto;
+     }
   /* Media Query for Small device */
+
   @media screen and (max-width: 576px) {
     .nav-tittle,
     .nav-middle,
@@ -148,5 +261,12 @@
       flex-direction: column-reverse;
       margin-top: 50px;
       text-align: center;
+    }
+    .curriculum-secton-card{
+      grid-template-columns: 1fr;
+      margin-top: -100px;
+    }
+    .dobule-arrow{
+      display: none;
     }
   }
