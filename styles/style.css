@@ -20,9 +20,10 @@
 
 
 
-
   /* Navbar Style */
   
+
+
    ul{
     list-style: none;
     gap: 32px;
@@ -85,6 +86,7 @@
 
   /* Hero-Kids Section */
 
+
   .kids-container{
     justify-content: space-between;
     align-items: center;
@@ -122,6 +124,7 @@
 
 
   /* Student-Curriculm-Section */
+
 
   .curriculum-section-container{
     max-width: 100%;
@@ -207,7 +210,10 @@
     transform: rotate(180deg);
   }
 
+
     /* Stories Section Styles */
+
+
     .story-section-container{
       max-width: 100%;
       background: url(../images/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
@@ -215,11 +221,11 @@
 
     .story-tittle{
       text-align: center;
-    font-size: 3rem;
-    font-weight: 800;
-    margin-top: 60px;
+      font-size: 3rem;
+      font-weight: 800;
+      margin-top: 60px;
     }
-   
+
     .story-section-card{
       max-width: 1160px;
       display: flex;
@@ -229,15 +235,14 @@
       padding: 150px 0px;
       gap: 20px;
     }
+
     .story-side-left{
-      /* max-width:35%; */
       border-radius: 16px;
       box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.05);
       background-color: #FFFFFF;
-  /* height: 480px; */
+
   }
      .story-side-right{
-      /* max-width: 55%; */
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       justify-content:center;
@@ -324,7 +329,6 @@
      }
      .story-card1, img{
       border-radius: 10px;
-      
      }
      .story-card-right{
       border-radius: 16px;
@@ -342,7 +346,7 @@
       justify-content: center;
       align-items: center;
      }
-     .stor-btn, button{
+      button{
       font-size: 1.25rem;
       font-weight: 800;
       color: #FFFFFF;
@@ -350,6 +354,54 @@
       padding: 15px 60px;
       border-radius: 12px;
       margin-top: -15px;
+      margin-bottom: 60px;
+     }
+
+     /* Footer Section Styles */
+
+
+     .footer-container{
+      background: #01ACFD;
+      display: flex;
+      max-width: 100%;
+      justify-content: space-evenly;
+     }
+     .footer-right{
+      margin: 50px 0px 50px 0px;
+     }
+     .footer-center{
+      margin: 50px 0px 50px 0px;
+     }
+     .footer-center ul li{
+      padding: 10px 0px;
+      color: #FFFFFF;
+     }
+     .footer-center h2{
+      margin-bottom: 10px;
+      color: #FFFFFF;
+     }
+     .footer-left{
+      margin: 50px 0px 50px 0px;
+     }
+     .icon{
+      width: 85px;
+      height: 85px;
+     }
+     .footer-icon-tittle{
+      font-size: 2.50rem;
+      font-weight: 800;
+      color: #FFFFFF;
+     }
+     .footer-right-description{
+      margin-top: 35px;
+      font-size: 1.25rem;
+      color: #FFFFFF;
+     }
+     .footer-left h2{
+      font-size: 1.50rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 32px;
      }
      
   /* Media Query for Small device */
@@ -403,5 +455,15 @@
      }
      .date-time5{
       max-width: 50%;
+     }
+     .footer-container{
+      flex-direction: column;
+      margin: 0px;
+     }
+     .footer-right{
+      margin: 5px;
+     }
+     .footer-center{
+      margin: 5x;
      }
   }
